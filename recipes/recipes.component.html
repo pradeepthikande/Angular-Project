@@ -1,0 +1,18 @@
+<!--<p>
+  recipes works!
+</p>-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6" style="margin-top:10px">
+      <button type="submit" class="btn btn-success">RECIPE</button>
+    </div>
+    
+  </div>
+  <ul class="nav recipe-items">
+     <input type="button" value="{{caption}}" (click)="changeData()" style="margin-top:20px"/> 
+      <li *ngIf="showInfo"  style="margin-top:10px"><a href="#" [routerLink]="['recipeDetails']">Tasty Schnitzel<h5>As per tasty schnitzel.just awesome<img  src="../assets/images/1.jpg" alt="food" width="50px" height="50px"></h5></a></li>
+      <li *ngIf="showInfo" style="margin-top:10px"><a href="#">CHICKEN BURGER<h5>As per tasty schnitzel.just awesome<img src="../assets/images/2.jpeg" alt="food" width="50px" height="50px"></h5></a></li>
+
+  </ul>
+</div>
+<router-outlet></router-outlet>
